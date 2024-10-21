@@ -46,7 +46,7 @@ def modelGroc(model="llama3-70b-8192", temperature=0.2):
     llm = ChatGroq(
         model=model,
         temperature=temperature,
-        api_key="GROC_API_KEY"
+        api_key=GROC_API_KEY
     )
     return llm
 
