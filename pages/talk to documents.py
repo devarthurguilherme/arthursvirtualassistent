@@ -181,8 +181,8 @@ if not uploads:
     st.info("Please, send a file to continue")
     st.stop()
 
-if "chat_history" not in st.session_state:
-    st.session_state.chat_history = [
+if "llm_chat_history" not in st.session_state:
+    st.session_state.llm_chat_history = [
         AIMessage(content="Hello, I'm your Virtual Assistent! How can I help you?"),
     ]
 
@@ -193,7 +193,7 @@ if "docs_list" not in st.session_state:
 if "retriever" not in st.session_state:
     st.session_state.retriever = None
 
-for message in st.session_state.chat_history:
+for message in st.session_state.llm_chat_history:
     if isinstance(message, AIMessage):
         with st.chat_message("AI"):
             st.write(message.content)
@@ -205,7 +205,7 @@ start = time.time()
 userQuery = st.chat_input("Digit your message here...")
 
 if userQuery is not None and userQuery != "" and uploads is not None:
-    st.session_state.chat_history.append(HumanMessage(content=userQuery))
+    st.session_state.llm_chat_history.append(HumanMessage(content=userQuery))
 
     with st.chat_message("Human"):
         st.markdown(userQuery)
@@ -225,7 +225,7 @@ if userQuery is not None and userQuery != "" and uploads is not None:
 
             ragChain = configRagChain(modelClass, st.session_state.retriever)
             result = ragChain.invoke(
-                {"input": userQuery, "chat_history": st.session_state.chat_history})
+                {"input": userQuery, "chat_history": st.session_state.llm_chat_history})
 
             resp = result['answer']
             st.write(resp)
@@ -242,7 +242,7 @@ if userQuery is not None and userQuery != "" and uploads is not None:
                 with st.popover(ref):
                     st.caption(doc.page_content)
 
-    st.session_state.chat_history.append(AIMessage(content=resp))
+    st.session_state.llm_chat_history.append(AIMessage(content=resp))
 
 end = time.time()
 print("Tempo: ", end - start)
