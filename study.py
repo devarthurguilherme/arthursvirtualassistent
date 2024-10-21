@@ -28,9 +28,9 @@ modelClass = "groc"
 
 # Dicionário com os arquivos PDF
 pdf_files = {
-    "Power BI Completo": r"C:\Users\arthu\Desktop\IA_STUDIES\Video Transcription and Comprehension\Power BI Completo.pdf",
-    "Manipulação e Análise de Dados com Pandas": r"C:\Users\arthu\Desktop\IA_STUDIES\Video Transcription and Comprehension\Manipulação e Análise de Dados com Pandas.pdf",
-    "SQL": r"C:\Users\arthu\Desktop\IA_STUDIES\Video Transcription and Comprehension\SQL e MySQL de forma prática e objetiva, e ainda crie projetos com PHP e MySQL.pdf"
+    "Power BI Completo": r"C:\Users\arthu\Desktop\ArthurAssistent\data\Power BI Completo - Do Básico ao Avançado.pdf",
+    "Manipulação e Análise de Dados com Pandas": r"C:\Users\arthu\Desktop\ArthurAssistent\data\Manipulação e Análise de Dados com Pandas.pdf",
+    "SQL": r"C:\Users\arthu\Desktop\ArthurAssistent\data\SQL e MySQL de forma prática e objetiva, e ainda crie projetos com PHP e MySQL.pdf"
 }
 
 # Sidebar para seleção de PDFs
