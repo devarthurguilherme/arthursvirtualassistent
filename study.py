@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-GROC_API_KEY = os.getenv("GROC_API_TOKEN")
+GROC_API_KEY = os.getenv("GROC_API_KEY")
 
 # Streamlit Configure here
 st.set_page_config(page_title="Arthur's Assistant 📚",
