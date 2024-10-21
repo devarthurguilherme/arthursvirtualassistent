@@ -28,10 +28,11 @@ modelClass = "groc"
 
 # Dicionário com os arquivos PDF
 pdf_files = {
-    "Power BI Completo": r"C:\Users\arthu\Desktop\ArthurAssistent\data\Power BI Completo - Do Básico ao Avançado.pdf",
-    "Manipulação e Análise de Dados com Pandas": r"C:\Users\arthu\Desktop\ArthurAssistent\data\Manipulação e Análise de Dados com Pandas.pdf",
-    "SQL": r"C:\Users\arthu\Desktop\ArthurAssistent\data\SQL e MySQL de forma prática e objetiva, e ainda crie projetos com PHP e MySQL.pdf"
+    "Power BI Completo": "https://raw.githubusercontent.com/devarthurguilherme/arthursvirtualassistent/main/data/Power%20BI%20Completo%20-%20Do%20B%C3%A1sico%20ao%20Avan%C3%A7ado.pdf",
+    "Manipulação e Análise de Dados com Pandas": "https://raw.githubusercontent.com/devarthurguilherme/arthursvirtualassistent/main/data/Manipula%C3%A7%C3%A3o%20e%20An%C3%A1lise%20de%20Dados%20com%20Pandas.pdf",
+    "SQL": "https://raw.githubusercontent.com/devarthurguilherme/arthursvirtualassistent/main/data/SQL%20e%20MySQL%20de%20forma%20pr%C3%A1tica%20e%20objetiva%2C%20e%20ainda%20crie%20projetos%20com%20PHP%20e%20MySQL.pdf"
 }
+
 
 # Sidebar para seleção de PDFs
 selected_pdf = st.sidebar.selectbox(
