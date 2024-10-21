@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Talk to Documents 📚",
+st.set_page_config(page_title="Arthur's Virtual Assistent 📚",
                    page_icon="📚", layout='wide')
 
-st.title("Talk to Documents 📚")
+st.title("About")
