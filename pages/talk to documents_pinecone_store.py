@@ -20,7 +20,6 @@ import io
 import tempfile
 import os
 import time
-from pinecone import Pinecone
 
 from langchain_community.vectorstores import Pinecone
 from langchain_huggingface import HuggingFaceEmbeddings
@@ -35,7 +34,6 @@ load_dotenv()
 GROC_API_KEY = os.getenv("GROC_API_KEY")
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 
-pc = Pinecone(api_key=PINECONE_API_KEY)
 
 # Streamlit Configure
 
