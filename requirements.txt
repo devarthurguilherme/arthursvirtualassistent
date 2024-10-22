@@ -102,3 +102,4 @@ watchdog==5.0.3
 yarl==1.15.5
 pinecone-client
 pinecone
+pymupdf
