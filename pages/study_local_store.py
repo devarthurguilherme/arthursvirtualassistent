@@ -111,7 +111,7 @@ def configRagChain(modelClass, retriever):
     # Prompt Template to Questions and Answers
     questionsAnswersPromptTemplate = """You are a Virtual Assistant very useful and answer general questions.
         Use the following pieces of context to answer the question. 
-        If you don't know the answer, just say you don't know. Keep your answer concise..
+        If you don't know the answer, just say you don't know. Keep your answer concise. Just answer if there is in the context. never answer questions out context.
         Answer in Portuguese. \n\n
         Ask: {input} \n
         Context: {context}"""
