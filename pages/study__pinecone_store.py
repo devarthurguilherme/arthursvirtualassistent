@@ -8,7 +8,7 @@ import tempfile
 import os
 import time
 from langchain_community.vectorstores import Pinecone
-import pinecone
+
 
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter

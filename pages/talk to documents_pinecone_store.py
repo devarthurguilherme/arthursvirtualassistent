@@ -22,7 +22,6 @@ import os
 import time
 
 from langchain_community.vectorstores import Pinecone
-import pinecone
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
