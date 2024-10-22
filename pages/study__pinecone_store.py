@@ -4,7 +4,6 @@ from langchain_core.prompts import MessagesPlaceholder
 from langchain_groq import ChatGroq
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate, PromptTemplate
-import tempfile
 import os
 import time
 from langchain_community.vectorstores import Pinecone
