@@ -97,7 +97,7 @@ def configRetriever(uploads):
     embeddings = HuggingFaceEmbeddings()
 
     # Definindo o nome do índice no Pinecone
-    index_name = 'outroindex'
+    index_name = 'talktopdf'
 
     # Criar armazenamento de vetores no Pinecone
     vectorstore = Pinecone.from_documents(
