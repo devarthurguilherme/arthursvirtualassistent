@@ -22,7 +22,7 @@ GROC_API_KEY = os.getenv("GROC_API_KEY")
 pinecone_api_token = os.getenv("PINECONE_API_KEY")
 
 # Streamlit Configure here
-st.set_page_config(page_title="Arthur's Assistant 📚",
+st.set_page_config(page_title="Arthur's Assistant (Pinecone) 📚",
                    page_icon="📚", layout='wide')
 st.title("Arthur's Assistant 📚")
 

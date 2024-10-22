@@ -35,7 +35,7 @@ GROC_API_KEY = os.getenv("GROC_API_KEY")
 
 # Streamlit Configure
 
-st.set_page_config(page_title="Talk to Documents 📚",
+st.set_page_config(page_title="Talk to Documents (Pinecone)📚",
                    page_icon="📚", layout='wide')
 
 st.title("Talk to Documents 📚")
