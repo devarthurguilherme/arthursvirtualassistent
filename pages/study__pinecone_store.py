@@ -19,7 +19,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 GROC_API_KEY = os.getenv("GROC_API_KEY")
-pinecone_api_token = os.getenv("PINECONE_API_KEY")
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
+
+pc = Pinecone(api_key=PINECONE_API_KEY)
 
 # Streamlit Configure here
 st.set_page_config(page_title="Arthur's Assistant (Pinecone) 📚",
